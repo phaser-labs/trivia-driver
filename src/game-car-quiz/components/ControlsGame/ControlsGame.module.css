@@ -1,0 +1,50 @@
+.game_carquiz_controls_game {
+    position: fixed;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%) translateY(100%); 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #272727c2;
+    width: 100%;
+    max-width: 350px;
+    animation: slideInUp 0.5s ease-out forwards;
+  }
+  
+  @keyframes slideInUp {
+    from {
+      transform: translateX(-50%) translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
+.game_carquiz_controls_game img {
+  width: 100%;
+  user-select: none;   /* Evita que el texto/imagen sea seleccionado */
+  pointer-events: none; /* Desactiva interacciones como arrastre y clics (opcional) */
+  -webkit-user-drag: none; /* Bloquea el arrastre en navegadores WebKit (Chrome, Safari) */
+  -khtml-user-drag: none; /* Para navegadores basados en KHTML (obsoleto) */
+  -moz-user-drag: none; /* Para Firefox */
+  -ms-user-drag: none; /* Para Edge/IE */
+}
+
+.game_carquiz_controls_game button {
+  background-color: transparent;
+  border: none;
+  width: 120px;
+  height: 100px;
+}
+
+.game_carquiz_arrow_up {
+  grid-column: 2;
+}
+
+.game_carquiz_controls_game .game_carquiz_arrows {
+  grid-column: 1;
+}

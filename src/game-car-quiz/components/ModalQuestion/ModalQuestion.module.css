@@ -1,0 +1,135 @@
+.game_carquiz_modal_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  background-color: #1a1a1ab8;
+  flex-direction: column;
+  transform: translate(-21%, -6%);
+}
+
+.game_carquiz_modal_content {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 4px;
+  text-align: center;
+  width: 54%;
+  height: 70%;
+  color: #eee;
+  filter: drop-shadow(2px 4px 6px black);
+  font-size: 3rem;
+  font-family: "MyCustomFont", sans-serif;
+  margin: 0;
+}
+.game_carquiz_modal_content > p {
+  font-size: 2.5rem;
+  color: #eee;
+  margin: 0;
+  background: linear-gradient(to bottom, #ae7e79, #6d446c);
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+  padding: 2px 10px;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 46%);
+  border-bottom: 1px solid #d6d6d6;
+  border-left: 1px solid #d6d6d6;
+  border-right: 1px solid #d6d6d6;
+  border-radius: 10px;
+  max-width: 90%;
+}
+
+.game_carquiz_options_container {
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 370px;
+}
+
+.game_carquiz_options_container div {
+  display: flex;
+  max-height: fit-content;
+  gap: 10px;
+  background: linear-gradient(to bottom, #ae7e79, #6d446c);
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+  padding: 0px 10px;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 46%);
+  border-bottom: 1px solid #d6d6d6;
+  border-left: 1px solid #d6d6d6;
+  border-right: 1px solid #d6d6d6;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 2rem;
+  overflow-wrap: anywhere;
+  height: 5rem;
+}
+
+.game_carquiz_options_container p {
+  text-align: left;
+  margin: 0;
+}
+
+.game_carquiz_option_button {
+  margin: 1rem 0;
+  width: 70px;
+  height: 70px;
+  height: 70px;
+  min-width: 70px;
+  cursor: pointer;
+  border: none;
+  background-image: url("/assets/game-car-question/img/Collects/Star.png");
+  background-color: transparent;
+  background-position: center;
+  background-size: cover;
+}
+
+.game_carquiz_option_button:is(:hover, :focus) {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+  filter: saturate(1.5);
+}
+
+@media screen and (min-width: 1650px) {
+  .game_carquiz_modal_content {
+    height: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .game_carquiz_modal_content {
+    width: 90%;
+    height: 80%;
+  }
+  .game_carquiz_options_container {
+    width: 100%;
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .game_carquiz_modal_content {
+    width: 100%;
+    height: 90%;
+    transform: scale(0.8);
+  }
+  .game_carquiz_options_container {
+    width: 100%;
+    max-width: 85%;
+    height: 440px;
+  }
+
+  .game_carquiz_modal_overlay {
+    transform: translate(-21%, -30%);
+  }
+}
