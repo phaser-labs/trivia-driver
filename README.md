@@ -19,7 +19,7 @@
 
 1. 🔄 Clona el repositorio:
   ```bash
-  git clone https://github.com/phaser-labs/phaser-games.git
+  git clone git@github.com:phaser-labs/trivia-driver.git
   ```
 2. 📂 Navega al directorio del proyecto:
   ```bash
