@@ -88,7 +88,7 @@
   min-width: 70px;
   cursor: pointer;
   border: none;
-  background-image: url("/assets/game-car-question/img/Collects/Star.png");
+  background-image: url("assets/game-car-question/img/Collects/Star.png");
   background-color: transparent;
   background-position: center;
   background-size: cover;

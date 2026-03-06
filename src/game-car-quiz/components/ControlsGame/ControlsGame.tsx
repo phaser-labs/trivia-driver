@@ -1,6 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect, useState } from "react";
+
 import { eventBus } from "../../game/eventBus";
+
 import css from './ControlsGame.module.css';
 
 interface Controls {
@@ -12,10 +14,10 @@ interface Controls {
 }
 
 const dataControls: Controls[] = [
-  { key: 'arrow_up', src: '/assets/game-car-question/img/Controls/arrow_up.png', alt: 'control hacia arriba', class: css.game_carquiz_arrow_up, ariaLabel: 'Click para conducir hacia arriba.' },
-  { key: 'arrow_left', src: '/assets/game-car-question/img/Controls/arrow_left.png', alt: 'control hacia la izquierda', class: css.game_carquiz_arrows, ariaLabel: 'Click para conducir hacia la izquierda.' },
-  { key: 'arrow_down', src: '/assets/game-car-question/img/Controls/arrow_down.png', alt: 'control hacia abajo', ariaLabel: 'Click para conducir hacia abajo.' },
-  { key: 'arrow_right', src: '/assets/game-car-question/img/Controls/arrow_right.png', alt: 'control hacia la derecha', ariaLabel: 'Click para conducir hacia la derecha.' }
+  { key: 'arrow_up', src: 'assets/game-car-question/img/Controls/arrow_up.png', alt: 'control hacia arriba', class: css.game_carquiz_arrow_up, ariaLabel: 'Click para conducir hacia arriba.' },
+  { key: 'arrow_left', src: 'assets/game-car-question/img/Controls/arrow_left.png', alt: 'control hacia la izquierda', class: css.game_carquiz_arrows, ariaLabel: 'Click para conducir hacia la izquierda.' },
+  { key: 'arrow_down', src: 'assets/game-car-question/img/Controls/arrow_down.png', alt: 'control hacia abajo', ariaLabel: 'Click para conducir hacia abajo.' },
+  { key: 'arrow_right', src: 'assets/game-car-question/img/Controls/arrow_right.png', alt: 'control hacia la derecha', ariaLabel: 'Click para conducir hacia la derecha.' }
 ];
 
 export const ControlsGame = () => {

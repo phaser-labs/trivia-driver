@@ -1,9 +1,15 @@
 
 export interface Question {
-    id: string;
     question: string;
-    options: string[];
-    correctIndex: number;
-    backgroundImage: string;
+    options: {
+      a: string;
+      b: string;
+      c?: string;
+      d?: string;
+      e?: string;
+      f?: string;
+    };
+    correctAnswer: 'a' | 'b' | 'c' | 'd' | 'e' | 'f';
+    backgroundImage?: string;
   }
   

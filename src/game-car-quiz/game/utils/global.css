@@ -2,12 +2,14 @@
   font-family: 'MyCustomFont';
   font-style: normal;
   font-weight: 400;
-  src: url('/assets/game-car-question/font/VT323-Regular.ttf');
+  src: url('assets/game-car-question/font/VT323-Regular.ttf');
 }
+
+.game-car-container {}
 
 .game-carquiz-btn-controls {
   cursor: pointer;
-  background-image: url(/assets/game-car-question/img/Controls/Buttons-Control.png);
+  background-image: url(assets/game-car-question/img/Controls/Buttons-Control.png);
   background-size: contain;
   width: 50px;
   height: 50px;
@@ -18,7 +20,7 @@
 
 .game-carquiz-btn-menu {
   cursor: pointer;
-  background-image: url(/assets/game-car-question/img/Controls/Buttons-Menu.png);
+  background-image: url(assets/game-car-question/img/Controls/Buttons-Menu.png);
   background-size: contain;
   width: 50px;
   height: 50px;
@@ -71,7 +73,7 @@
 .game-carquiz-btn-config {
     border-radius: 10px;
     cursor: pointer;
-    background-image: url(/assets/game-car-question/img/Controls/Buttons-Config.png);
+    background-image: url(assets/game-car-question/img/Controls/Buttons-Config.png);
     width: 60px;
     height: 60px;
     border: none;
@@ -182,7 +184,7 @@
 
 /* modal configuraciones */
 
-.game_carquiz_config_game {
+.game-carquiz-config-game {
   position: fixed;
   left: 50%;
   top: 50%;
@@ -222,7 +224,7 @@ border-radius: 10px;
   cursor: pointer;
   font-size: 2rem;
   color: #fff;
-  background-image: url(/assets/game-car-question/img/Controls/Buttons-pressed-x.png);
+  background-image: url(assets/game-car-question/img/Controls/Buttons-pressed-x.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 40px;
@@ -243,7 +245,7 @@ border-radius: 10px;
 
 .game-carquiz-btn-config-audio {
   cursor: pointer;
-  background-image: url(/assets/game-car-question/img/Controls/Buttons-pressed-som.png);
+  background-image: url(assets/game-car-question/img/Controls/Buttons-pressed-som.png);
   background-size: contain;
   width: 50px;
   height: 50px;
