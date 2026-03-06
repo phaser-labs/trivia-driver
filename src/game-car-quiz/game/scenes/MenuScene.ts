@@ -12,8 +12,8 @@ export class Menu extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image("menu-bg", "/assets/game-car-question/img/Scenes/Menu.jpg");
-    this.load.audio("music-menu", "/assets/game-car-question/sounds/011-menu.ogg");
+    this.load.image("menu-bg", "assets/game-car-question/img/Scenes/Menu.jpg");
+    this.load.audio("music-menu", "assets/game-car-question/sounds/011-menu.ogg");
   }
 
   create() {
@@ -23,7 +23,7 @@ export class Menu extends Phaser.Scene {
     if (globalState.music) {
       this.musicStarted = this.sound.add("music-menu");
       this.musicStarted.play({
-        volume: 0.5,
+        volume: 0.2,
         loop: true,
       });
     }

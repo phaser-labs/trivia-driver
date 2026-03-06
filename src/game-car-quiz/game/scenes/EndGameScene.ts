@@ -52,6 +52,8 @@ export class EndGame extends Phaser.Scene {
     backOption.once("pointerdown", () => {
       this.musicStarted?.stop();
       titleparagrah.remove();
+      // Resetear el estado global antes de volver al menú
+      globalState.reset();
       this.scene.restart();
       this.scene.start("menuScene");
     });

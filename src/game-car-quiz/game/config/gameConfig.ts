@@ -16,7 +16,6 @@ export const config: Phaser.Types.Core.GameConfig = {
   },
   physics: {
     default: "arcade",
-    
   },
   dom: {
     createContainer: true,
